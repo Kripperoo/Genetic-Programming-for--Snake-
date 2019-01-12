@@ -1,7 +1,6 @@
 import curses
 import random
 import operator
-import pygraphviz as pgv
 import time
 import matplotlib
 matplotlib.use('TkAgg')
