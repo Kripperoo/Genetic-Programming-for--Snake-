@@ -20,9 +20,9 @@ Python snakePlay.py
 ```
 This version of the snake game allows you to play the same yourself using the arrow keys.
 Be sure to run the game from a terminal, and not within a text editor!
-
+```js
 Python snakeProblem.py
-
+```
 This version runs a genetic programming which will evolve a decision function to automatically solve the 'snake' game.
 Once the evolution is finished, press any key to see how the AI plays the game.
 
