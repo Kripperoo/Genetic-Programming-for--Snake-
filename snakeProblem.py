@@ -1,7 +1,7 @@
 import curses
 import random
 import operator
-import pygraphviz as pgv
+#import pygraphviz as pgv
 import time
 import matplotlib
 matplotlib.use('TkAgg')
@@ -715,16 +715,18 @@ def main():
 	print("Number of food items eaten %s" % eval(expr[0	]) )
     #print("Fitness with penalty %s" % evalArtificialAntBloatPenalty(expr) )
 
-	nodes, edges, labels = gp.graph(expr[0])
+	'''nodes, edges, labels = gp.graph(expr[0])
 	g = pgv.AGraph(nodesep=1.0)
 	g.add_nodes_from(nodes)
 	g.add_edges_from(edges)
 	g.layout(prog="dot")
 
+
 	for i in nodes:
 		n = g.get_node(i)
 		n.attr["label"] = labels[i]
 	g.draw("tree.pdf")
+	'''
 	plt.errorbar(generations, F, S, linestyle='--', marker='^')
 	print(F,S)
 	return expr[0]
